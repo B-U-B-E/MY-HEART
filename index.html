@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MY HEART</title>
+    <meta name="keywords" content="html,css,lekcii" />
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link href="./images/bubePlav.ico" rel="icon" type="icon" />
+    <style>
+      body {
+        text-align: center;
+      }
+      .B,
+      .R,
+      .E,
+      .I,
+      .N,
+      .S,
+      .T,
+      .EE,
+      .RR {
+        justify-self: center;
+      }
+
+      .B {
+        grid-row: 2;
+        grid-column: 1/2;
+      }
+      .R {
+        grid-row: 2;
+        grid-column: 2/3;
+      }
+      .E {
+        grid-row: 2;
+        grid-column: 3/4;
+      }
+      .I {
+        grid-row: 2;
+        grid-column: 4/5;
+      }
+      .N {
+        grid-row: 2;
+        grid-column: 5/6;
+      }
+      .S {
+        grid-row: 2;
+        grid-column: 6/7;
+      }
+      .T {
+        grid-row: 2;
+        grid-column: 7/8;
+      }
+      .EE {
+        grid-row: 2;
+        grid-column: 8/9;
+      }
+      .RR {
+        grid-row: 2;
+        grid-column: 9/10;
+      }
+
+      .table {
+        grid-column: 2/-1;
+      }
+      .header {
+        background-color: rebeccapurple;
+        border: ridge 3px #ffffff;
+        grid-column: 1/-1;
+        justify-self: stretch;
+        align-self: baseline;
+        grid-row: 1;
+      }
+      .headerFoot {
+        background-color: rebeccapurple;
+        border: ridge 3px #ffffff;
+        grid-column: 1/-1;
+        justify-self: stretch;
+        align-self: self-start;
+        grid-row: 3;
+      }
+      .allTable {
+        display: grid;
+        /* grid-row-gap: 1rem; */
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        align-items: end;
+      }
+
+      .bubeBrainsterPlusLines {
+        max-width: fit-content;
+        margin: 0 auto;
+      }
+      @media (max-width: 68.75em) {
+        .S {
+          grid-row: 3;
+          grid-column: 1;
+        }
+        .T {
+          grid-row: 3;
+          grid-column: 2;
+        }
+        .EE {
+          grid-row: 3;
+          grid-column: 3;
+        }
+        .RR {
+          grid-row: 3;
+          grid-column: 4/5;
+        }
+        .headerFoot {
+          grid-row: 4;
+        }
+        .allTable {
+          grid-template-columns: repeat(5, 1fr);
+        }
+        .bubeSrce {
+          grid-column: 2/-1 !important;
+          width: 300px;
+        }
+      }
+      .bubeSrce {
+        grid-column: 3/-1;
+        grid-row: 5;
+      }
+      @media (max-width: 38.75em) {
+        .bubeSrce {
+          grid-column: 1/-1 !important;
+        }
+        .I {
+          grid-row: 3;
+          grid-column: 1;
+        }
+        .N {
+          grid-row: 3;
+          grid-column: 2;
+        }
+
+        .S {
+          grid-row: 3;
+          grid-column: 3;
+        }
+        .T {
+          grid-row: 4;
+          grid-column: 1;
+        }
+        .EE {
+          grid-row: 4;
+          grid-column: 2;
+        }
+        .RR {
+          grid-row: 4;
+          grid-column: 3;
+        }
+        .headerFoot {
+          grid-row: 5;
+        }
+        .allTable {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 46em) {
+        iframe {
+          width: 400px;
+        }
+      }
+      iframe {
+        width: 100%;
+        height: 100vh;
+        opacity: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      body::before {
+        content: "";
+        background-image: radial-gradient(ellipse at top, #e66465, transparent),
+          radial-gradient(ellipse at bottom, #4d9f0c, transparent),
+          url("./images/prstPokazalec.jpg");
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        opacity: 60%;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+      }
+      .flex_bube {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- by BUBE -->
+    <!-- Б -->
+
+    <section id="Bube" class="bubeBrainsterPlusLines">
+      <!-- <img src="./images/prstPokazalec.jpg" alt="bube_so_prstot" /> -->
+      <div class="allTable">
+        <div class="header">
+          <table cellpadding="8px">
+            <thead>
+              <th></th>
+            </thead>
+          </table>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            grid-column: 1/-1;
+            grid-row: 1;
+          "
+        >
+          <table cellpadding="6px" border="1px">
+            <thead>
+              <tr>
+                <th colspan="5" bgcolor="rebeccapurple"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="6" bgcolor="rebeccapurple"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="4" bgcolor="rebeccapurple"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2" bgcolor="rebeccapurple"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="4" bgcolor="rebeccapurple"></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- У -->
+          <table cellpadding="6px" border="1px">
+            <tbody>
+              <tr>
+                <td rowspan="4" bgcolor="rebeccapurple"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="4" bgcolor="rebeccapurple"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="3" bgcolor="rebeccapurple"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td bgcolor="rebeccapurple"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td bgcolor="rebeccapurple"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="3" bgcolor="rebeccapurple"></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Б -->
+          <table cellpadding="6px" border="1px">
+            <thead>
+              <tr>
+                <th colspan="5" bgcolor="rebeccapurple"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="6" bgcolor="rebeccapurple"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="4" bgcolor="rebeccapurple"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2" bgcolor="rebeccapurple"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="4" bgcolor="rebeccapurple"></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Е -->
+          <table cellpadding="6px" border="1px">
+            <thead>
+              <tr>
+                <th colspan="5" bgcolor="rebeccapurple"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="5" bgcolor="rebeccapurple"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="3" bgcolor="rebeccapurple"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="5" bgcolor="rebeccapurple"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- B  -->
+        <div class="B">
+          <table border="1px" cellpadding="8px">
+            <thead>
+              <th bgcolor="rebeccapurple" colspan="5"></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td bgcolor="rebeccapurple" rowspan="6"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td bgcolor="rebeccapurple" colspan="4"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td bgcolor="rebeccapurple" rowspan="2"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td bgcolor="rebeccapurple" colspan="4"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- R   -->
+        <div class="R">
+          <table border="1px" cellpadding="8px">
+            <thead>
+              <th bgcolor="rebeccapurple" colspan="5"></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td bgcolor="rebeccapurple" rowspan="6"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td bgcolor="rebeccapurple" rowspan="2"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td bgcolor="rebeccapurple" colspan="4"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- E  -->
+        <div class="E">
+          <table border="1px" cellpadding="8px">
+            <thead>
+              <th bgcolor="rebeccapurple" colspan="5"></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td bgcolor="rebeccapurple" rowspan="6"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td bgcolor="rebeccapurple" rowspan="6"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td bgcolor="rebeccapurple" colspan="3"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- I  -->
+        <div class="I">
+          <table border="1px" cellpadding="8px">
+            <tbody>
+              <tr>
+                <td bgcolor="rebeccapurple" rowspan="7"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td bgcolor="rebeccapurple" rowspan="7"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td bgcolor="rebeccapurple"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td bgcolor="rebeccapurple"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td bgcolor="rebeccapurple"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- N -->
+        <div class="N">
+          <table border="1px" cellpadding="8px">
+            <tbody>
+              <tr>
+                <td bgcolor="rebeccapurple" rowspan="7"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td bgcolor="rebeccapurple" rowspan="7"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="3" bgcolor="rebeccapurple"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- S -->
+        <div class="S">
+          <table border="1px" cellpadding="8px">
+            <thead>
+              <th colspan="5" bgcolor="rebeccapurple"></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="5" bgcolor="rebeccapurple"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <td bgcolor="rebeccapurple" colspan="5"></td>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- T -->
+        <div class="T">
+          <table border="1px" cellpadding="8px">
+            <thead>
+              <th bgcolor="rebeccapurple" colspan="5"></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td bgcolor="rebeccapurple" rowspan="6"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- E -->
+        <div class="EE">
+          <table border="1px" cellpadding="8px">
+            <thead>
+              <th bgcolor="rebeccapurple" colspan="5"></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="5" bgcolor="rebeccapurple"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td bgcolor="rebeccapurple" colspan="3"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <td colspan="5" bgcolor="rebeccapurple"></td>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- R -->
+        <div class="RR">
+          <table border="1px" cellpadding="8px">
+            <thead>
+              <th colspan="5" bgcolor="rebeccapurple"></th>
+            </thead>
+
+            <tr>
+              <td rowspan="6" bgcolor="rebeccapurple"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td rowspan="2" bgcolor="rebeccapurple"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="4" bgcolor="rebeccapurple"></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="headerFoot">
+          <table cellpadding="8px">
+            <tfoot>
+              <td></td>
+            </tfoot>
+          </table>
+        </div>
+        <img
+          class="bubeSrce"
+          src="./images/SRCESKAKAVEC.gif"
+          alt="srceSkakavec"
+          width="500px"
+        />
+      </div>
+
+      <iframe
+        id="ytplayer"
+        type="text/html"
+        src="https://www.youtube.com/embed/Lgr2WMjvlM8?autoplay=1&amp;cc_load_policy=1&amp;disablekb=1&amp;enablejsapi=1&amp;loop=1&amp;modestbranding=1"
+        allowfullscreen=""
+        frameborder="0"
+      ></iframe>
+    </section>
+  </body>
+</html>
