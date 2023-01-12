@@ -71,14 +71,14 @@
         align-self: baseline;
         grid-row: 1;
       }
-      .headerFoot {
+      /* .headerFoot {
         background-color: rebeccapurple;
         border: ridge 3px #ffffff;
         grid-column: 1/-1;
         justify-self: stretch;
         align-self: self-start;
         grid-row: 3;
-      }
+      } */
       .allTable {
         display: grid;
         /* grid-row-gap: 1rem; */
@@ -108,9 +108,9 @@
           grid-row: 3;
           grid-column: 4/5;
         }
-        .headerFoot {
+        /* .headerFoot {
           grid-row: 4;
-        }
+        } */
         .allTable {
           grid-template-columns: repeat(5, 1fr);
         }
@@ -176,6 +176,7 @@
         top: 0;
         left: 0;
       }
+     
       body::before {
         content: "";
         background-image: radial-gradient(ellipse at top, #e66465, transparent),
@@ -194,16 +195,20 @@
       .flex_bube {
         display: flex;
       }
+      .container{
+        margin: 0 auto;
+      }
     </style>
   </head>
   <body>
     <!-- by BUBE -->
     <!-- Б -->
+<div class="container">
 
-    <section id="Bube" class="bubeBrainsterPlusLines">
-      <!-- <img src="./images/prstPokazalec.jpg" alt="bube_so_prstot" /> -->
-      <div class="allTable">
-<!--         <div class="header">
+  <section id="Bube" class="bubeBrainsterPlusLines">
+    <!-- <img src="./images/prstPokazalec.jpg" alt="bube_so_prstot" /> -->
+    <div class="allTable">
+        <!-- <div class="header">
           <table cellpadding="8px">
             <thead>
               <th></th>
@@ -211,14 +216,14 @@
           </table>
         </div> -->
         <div
-          style="
+        style="
             display: flex;
             justify-content: center;
             grid-column: 1/-1;
             grid-row: 1;
-          "
+            "
         >
-          <table cellpadding="6px" border="1px">
+        <table cellpadding="6px" border="1px">
             <thead>
               <tr>
                 <th colspan="5" bgcolor="rebeccapurple"></th>
@@ -386,7 +391,7 @@
             </tfoot>
           </table>
         </div>
-
+        
         <!-- B  -->
         <div class="B">
           <table border="1px" cellpadding="8px">
@@ -554,7 +559,7 @@
             </tbody>
           </table>
         </div>
-
+        
         <!-- N -->
         <div class="N">
           <table border="1px" cellpadding="8px">
@@ -597,7 +602,7 @@
             </tbody>
           </table>
         </div>
-
+        
         <!-- S -->
         <div class="S">
           <table border="1px" cellpadding="8px">
@@ -642,7 +647,7 @@
             </tfoot>
           </table>
         </div>
-
+        
         <!-- T -->
         <div class="T">
           <table border="1px" cellpadding="8px">
@@ -733,14 +738,14 @@
             </tfoot>
           </table>
         </div>
-
+        
         <!-- R -->
         <div class="RR">
           <table border="1px" cellpadding="8px">
             <thead>
               <th colspan="5" bgcolor="rebeccapurple"></th>
             </thead>
-
+            
             <tr>
               <td rowspan="6" bgcolor="rebeccapurple"></td>
               <td></td>
@@ -756,7 +761,7 @@
             <tr>
               <td colspan="4" bgcolor="rebeccapurple"></td>
             </tr>
-
+            
             <tr>
               <td></td>
               <td></td>
@@ -777,29 +782,31 @@
             </tr>
           </table>
         </div>
-
-<!--         <div class="headerFoot">
+        
+        <!-- <div class="headerFoot">
           <table cellpadding="8px">
             <tfoot>
               <td></td>
             </tfoot>
           </table>
-        </div> -->
+        </div>
         <img
-          class="bubeSrce"
-          src="./images/SRCESKAKAVEC.gif"
-          alt="srceSkakavec"
-          width="500px"
+        class="bubeSrce"
+        src="./images/SRCESKAKAVEC.gif"
+        alt="srceSkakavec"
+        width="500px"
         />
-      </div>
-
+      </div> -->
+      
       <iframe
         id="ytplayer"
         type="text/html"
         src="https://www.youtube.com/embed/Lgr2WMjvlM8?autoplay=1&amp;cc_load_policy=1&amp;disablekb=1&amp;enablejsapi=1&amp;loop=1&amp;modestbranding=1"
         allowfullscreen=""
         frameborder="0"
-      ></iframe>
-    </section>
-  </body>
-</html>
+        ></iframe>
+      </section>
+    </div>
+    </body>
+    </html>
+    
